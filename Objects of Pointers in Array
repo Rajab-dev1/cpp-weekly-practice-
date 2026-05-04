@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class Person
+{
+	private:
+		string name;
+		public:
+			void in()
+			{
+				cout<<" Enter the name = ";
+				cin>>name;
+			}
+			void out()
+			{
+				cout<<" Your name "<<name<<endl;
+			}
+};
+int main()
+{
+	Person *P[5];
+    int i;
+    for(i=0; i<5;i++)
+    {
+      P[i]= new Person ;
+      P[i]->in();
+	}
+	for(i=0; i<5; i++)
+	{
+		P[i]->out();
+	}
+	
+}
